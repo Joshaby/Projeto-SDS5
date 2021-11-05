@@ -73,17 +73,4 @@ public class Sale {
     public void setSeller(Seller seller) {
         this.seller = seller;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Sale)) return false;
-        Sale sale = (Sale) o;
-        return getId().equals(sale.getId());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId());
-    }
 }

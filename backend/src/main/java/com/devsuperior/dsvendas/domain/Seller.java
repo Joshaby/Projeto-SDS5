@@ -1,9 +1,7 @@
 package com.devsuperior.dsvendas.domain;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "tb_sellers")
@@ -15,7 +13,7 @@ public class Seller {
     private String name;
 
     @OneToMany(mappedBy = "seller")
-    private Set<Sale> sales = new HashSet<>();
+    private List<Sale> sales = new ArrayList<>();
 
     public Seller() {
     }
@@ -39,20 +37,7 @@ public class Seller {
         this.name = name;
     }
 
-    public Set<Sale> getSales() {
+    public List<Sale> getSales() {
         return sales;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Seller)) return false;
-        Seller seller = (Seller) o;
-        return getId().equals(seller.getId());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId());
     }
 }
