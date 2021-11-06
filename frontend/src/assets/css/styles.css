@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
 :root {
     --color-primary: #FF8400;
 }
@@ -30,4 +29,9 @@ html, body {
 
 .text-primary {
     color: var(--color-primary) !important;
+}
+
+.container-home {
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
