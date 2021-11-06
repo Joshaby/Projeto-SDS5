@@ -12,6 +12,7 @@
 	<artifactId>dsvendas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dsvendas</name>
+	<packaging>jar</packaging>
 	<description>Projeto desenvolvido na Semana Spring React 5 da Dev Superior</description>
 	<properties>
 		<java.version>11</java.version>
