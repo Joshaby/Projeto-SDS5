@@ -30,6 +30,7 @@ public class SaleDTO implements Serializable {
         this.id = sale.getId();
         this.visited = sale.getVisited();
         this.deals = sale.getDeals();
+        this.amount = sale.getAmount();
         this.date = sale.getDate();
         this.seller = new SellerDTO(sale.getSeller());
     }
